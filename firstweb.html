@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>내 첫 웹사이트</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            padding: 50px;
+        }
+        h1 {
+            color: #ee1717;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>안녕하세요! </h1>
+    <p>엔트리 바로가기!</p>
+    <button id="myBtn">클릭해보기</button>
+    <script>
+        // id가 "myBtn"인 버튼을 찾아서 변수에 저장
+        const btn = document.getElementById("myBtn");
+
+        // 클릭 이벤트 연결
+        btn.addEventListener("click", function() {
+            window.location.href = "https://playentry.org";
+        });
+    </script>
+</body>
+</html>
